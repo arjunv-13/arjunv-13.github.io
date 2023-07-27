@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <!-- Include Bootstrap CSS from CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <header class="bg-dark text-white py-4">
+      <h1 style="text-align: center;">My Portfolio</h1>
+      <nav>
+        <ul class="nav justify-content-center">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  
+  <section id="about" class="py-5">
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+<div class="bg bg3"></div>
+<div class="content">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <p>
+            Hi there! I'm Arjun Verma, a student at Yale majoring in Economics and Applied Math. I'm fascinated by everything from physics to philosophy to politics and have a love of learning.
+          </p>
+          <p>I love problem-solving in every shape and form, whether mathematical challenges or philosophical questions. To me, programming is in the same class - it's a problem-solving tool with enormous potential and is immensely rewarding to work with. I took Harvard's open-source CS50 at the beginning of Summer 2023, and I've really enjoyed exploring the world of computer science since then, whether that's building projects or learning about theoretical computer science.</p>
+          <p>I have experience with the following languages, from most comfortable to least comfortable:</p>
+          <ul>
+            <li>Python</li>
+            <li>SQLite</li>
+            <li>C</li>
+            <li>Java</li>
+            <li>HTML/CSS</li>
+          </ul>
+          <p>I made this portfolio to practice using HTML/CSS and showcase what I've been working on recently.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="/static/arjun.jpeg" style="width: 80%; border-radius: 50%; display: block; margin-left: auto; margin-right: auto;">
+      </div>
+    </div>
+    </div>
+  </section>
+
+  
+  <section id="projects" class="py-5">
+    <div class="container">
+      <h2>Programming Projects</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="project mb-4">
+            <h3>Project 1: <a href="http://arjunv13.pythonanywhere.com/">DebtShare</a></h3>
+            <h5>Python, Flask, SQLite, HTML, CSS (Bootstrap)</h5>
+            <p>Developed a full-stack web application. DebtShare is a platform to record transactions/payments between groups of friends and minimize repayment transactions.</p>
+            <p>This was my first foray into web development, and the site includes features like email reminders, password changing, confirmation tokens, and an informative dashboard.</p>
+            <p>In the images below are some of the pages on the website that users can visit.</p>
+            <br>
+            <div id="DebtSharePhotos" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000" style="justify-content: center;">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#DebtSharePhotos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#DebtSharePhotos" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#DebtSharePhotos" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#DebtSharePhotos" data-bs-slide-to="3" aria-label="Slide 4"></button>
+
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="/static/DS - Home.png" class="d-block w-100" alt="Homepage">
+                  <div class="carousel-caption d-none d-md-block">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="/static/DS - Dashboard.png" class="d-block w-100" alt="Dashboard">
+                  <div class="carousel-caption d-none d-md-block">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="/static/DS - Group.png" class="d-block w-100" alt="Group Info">
+                  <div class="carousel-caption d-none d-md-block">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="/static/DS - Invite.png" class="d-block w-100" alt="Invite">
+                  <div class="carousel-caption d-none d-md-block">
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#DebtSharePhotos" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#DebtSharePhotos" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="project mb-4">
+            <h3>Project 2: <a href="https://github.com/arjunv-13/ChessMiniMax">Chess Engine</a></h3>
+            <h5>Python, Pygame, Python-Chess</h5>
+            <p>
+                Created a Chess Engine using a Minimax algorithm and the Python-Chess library along with alpha-beta pruning, move ordering, capture quiescence search, and a custom evaluation function for each stage of the game. It permits both engine vs. engine and player vs. engine games.
+            </p>
+            <p>
+                During this project, I explored data structures like trees, hash maps, and numpy arrays along with algorithmic techniques like recursion, DFS, and minimax. I really enjoyed starting with a basic minimax algorithm and implementing various modifications to improve speed and performance. One of these modifications I particulary enjoyed was implmenting a capture quiescence search helped counteract the horizon effect, where the search at a normal depth might end at a position which is highly unstable. For example, if the queens are in the middle of being traded, and the search stops, then that position would be incorrectly evaluated. As a result, the search continues while there are still captures.
+            </p>
+            <p>
+              Below are some positions from games that the engine played against itself and against me.
+            </p>
+            <div id="ChessPhotos" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#ChessPhotos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#ChessPhotos" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#ChessPhotos" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#ChessPhotos" data-bs-slide-to="3" aria-label="Slide 4"></button>
+
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="/static/chess1.png" class="d-block w-100 padded-image" alt="Homepage">
+                  <div class="carousel-caption d-none d-md-block">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="/static/chess2.png" class="d-block w-100 padded-image" alt="Dashboard">
+                  <div class="carousel-caption d-none d-md-block">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="/static/chess3.png" class="d-block w-100 padded-image" alt="Group Info">
+                  <div class="carousel-caption d-none d-md-block">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="/static/chess4.png" class="d-block w-100 padded-image" alt="Invite">
+                  <div class="carousel-caption d-none d-md-block">
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#ChessPhotos" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#ChessPhotos" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="project mb-4">
+            <h3>Project 3: LogoLandscape</h3>
+            <h5>Python, Flask, Brandfetch API, Openpyxl, Python-pptx</h5>
+            <p>Developed a platform that turned Excel spreadsheets containing company information into organized and aligned logo landscape slides.</p>
+            <p>During my internship with Lightning Partners, as I was creating presentations, one particularly tedious task involved creating slides with lots of logos. To fix this, I decided to program an application that could take company data and automatically create a slide out of it.</p>
+            <p>While working on this project, I learned about working with APIs, images, and interacting with other applications like PowerPoint and Excel using Python. I also used Flask to make the process easier/intuitive to access for other interns/employees.</p>
+            <p>Unfortunately, I can't attach a link because I worked on it for an internship.</p>
+            <br>
+            <div id="LogoPhotos" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000" style="justify-content: center;">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#LogoPhotos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#LogoPhotos" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              </div>
+              <div class="carousel-inner">
+                <div style = "height: 40vh;">
+                <div class="carousel-item active">
+                  <img src="/static/Logo Excel.png" class="d-block w-100 padded-image2" alt="Excel">
+                  <div class="carousel-caption d-none d-md-block">
+                  </div>
+                  <center>An example input excel file</center>
+                </div>
+                <div class="carousel-item">
+                  <img src="/static/Logo PPT.png" class="d-block w-100" alt="PowerPoint">
+                  <div class="carousel-caption d-none d-md-block">
+                  </div>
+                  <center>The resulting output PowerPoint</center>
+                </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#LogoPhotos" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#LogoPhotos" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="project mb-4">
+            <h3>Project 4: <a href="https://github.com/arjunv-13/sudokuSolver">Sudoku Solver</a></h3>
+            <h5>Python, Pygame</h5>
+            <p>
+                Created a sudoku solver visualization tool. This program fetches a valid sudoku puzzle, solves it without delay, and then does it slowly with visual aids in order to show a user how a recursive backtracking algorithm works.
+            </p>
+            <p>
+                This project helped me learn more about recursion and the importance of optimizing algorithms when that function is repeatedly called called a high number of times.
+            </p>
+            <p>
+              In the images below, you can see an example of how the display works. Green numbers represent correct guesses, red numbers represent incorrect guesses, and black numbers are part of the input puzzle. However, the solving algorithm does not "know" this beforehand, and it is simply shown this way to illustrate the algorithm's progress to the user.
+            </p>
+            <div id="SudokuPhotos" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#SudokuPhotos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#SudokuPhotos" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#SudokuPhotos" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#SudokuPhotos" data-bs-slide-to="3" aria-label="Slide 4"></button>
+
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="/static/sudoku1.png" class="d-block w-100 padded-image" alt="Start Sudoku">
+                  <div class="carousel-caption d-none d-md-block">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="/static/sudoku2.png" class="d-block w-100 padded-image" alt="Solving Sudoku 1">
+                  <div class="carousel-caption d-none d-md-block">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="/static/sudoku3.png" class="d-block w-100 padded-image" alt="Solving Sudoku 2">
+                  <div class="carousel-caption d-none d-md-block">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="/static/sudoku4.png" class="d-block w-100 padded-image" alt="Finished Sudoku">
+                  <div class="carousel-caption d-none d-md-block">
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#SudokuPhotos" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#SudokuPhotos" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      
+
+  </section>
+
+  <section id="contact" class="bg-dark text-white py-5">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>
+        You can reach me via email at arjun.verma@yale.edu or connect with me on <a href = "https://www.linkedin.com/in/arjunjaiverma">LinkedIn</a>. Let's discuss how we can collaborate on exciting projects together!
+      </p>
+    </div>
+  </section>
+
+  <!-- Include Bootstrap JS from CDN (required for Bootstrap features like dropdowns, modals, etc.) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
