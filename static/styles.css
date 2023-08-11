@@ -92,3 +92,28 @@ h3 {
 li {
   font-family: Futura
 }*/
+
+.credentials-box {
+  border: 3px solid #5478c1;
+  padding-top: 15px;
+  padding-bottom: 0px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 6px;
+  background-color: #94a1cb;
+  width: 250px;
+  margin: 0 auto;
+}
+
+.credential-label {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.credential-field {
+  background-color: #c1c5e1;
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
